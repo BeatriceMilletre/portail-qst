@@ -115,7 +115,7 @@ centré sur le vécu au quotidien, les forces et les difficultés dans différen
     )
     st.markdown("</div>", unsafe_allow_html=True)
 
-# ---------- TROISIÈME LIGNE : Compétences sociales / ToM ----------
+# ---------- TROISIÈME LIGNE : Compétences sociales / ToM + Cohérence centrale ----------
 col5, col6 = st.columns(2)
 
 with col5:
@@ -138,9 +138,27 @@ Les résultats détaillés sont accessibles au praticien via un code anonyme.
     )
     st.markdown("</div>", unsafe_allow_html=True)
 
-# Colonne vide pour organiser proprement la grille
+# --- Cohérence centrale ---
 with col6:
-    st.write("")
+    st.markdown('<div class="q-card">', unsafe_allow_html=True)
+    st.markdown("### Questionnaire Cohérence centrale (ECC-24)")
+    st.write(
+        """
+Questionnaire évaluant le **style de traitement de l’information** :
+
+- préférence pour les détails ou pour la vision globale,
+- capacité à intégrer les informations dans un ensemble cohérent,
+- prise en compte du contexte,
+- flexibilité entre focus local et vue d’ensemble.
+
+Outil particulièrement utile en contexte TSA, HPI et profils neurodivergents.
+        """
+    )
+    st.link_button(
+        "Passer le questionnaire Cohérence centrale",
+        "https://coherencecentrale.streamlit.app/",
+    )
+    st.markdown("</div>", unsafe_allow_html=True)
 
 # ---------- SECTION FUTURE : ESPACE PRATICIEN ----------
 st.markdown("---")
