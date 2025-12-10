@@ -115,7 +115,34 @@ centré sur le vécu au quotidien, les forces et les difficultés dans différen
     )
     st.markdown("</div>", unsafe_allow_html=True)
 
-# ---------- SECTION FUTURE : ESPACE PRATICIEN (OPTIONNEL POUR PLUS TARD) ----------
+# ---------- TROISIÈME LIGNE : Compétences sociales / ToM ----------
+col5, col6 = st.columns(2)
+
+with col5:
+    st.markdown('<div class="q-card">', unsafe_allow_html=True)
+    st.markdown("### Questionnaire Compétences sociales / Théorie de l’esprit")
+    st.write(
+        """
+Questionnaire pour adolescents et adultes évaluant :
+
+- les compétences sociales (compréhension, communication, flexibilité, autonomie),
+- la régulation émotionnelle en interaction,
+- et un niveau global de **théorie de l’esprit (ToM)**.
+
+Les résultats détaillés sont accessibles au praticien via un code anonyme.
+        """
+    )
+    st.link_button(
+        "Passer le questionnaire Compétences sociales",
+        "https://theory-of-mind.streamlit.app/",
+    )
+    st.markdown("</div>", unsafe_allow_html=True)
+
+# Colonne vide pour organiser proprement la grille
+with col6:
+    st.write("")
+
+# ---------- SECTION FUTURE : ESPACE PRATICIEN ----------
 st.markdown("---")
 st.header("🔐 Espace praticien (bientôt)")
 
