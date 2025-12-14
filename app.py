@@ -42,6 +42,9 @@ st.markdown(card_css, unsafe_allow_html=True)
 # ---------- SECTION : QUESTIONNAIRES ----------
 st.header("🧪 Questionnaires à remplir")
 
+# =========================
+# LIGNE 1
+# =========================
 col1, col2 = st.columns(2)
 
 # --- AQ / EQ ---
@@ -79,6 +82,9 @@ intensité émotionnelle, réactivité, empathie, relation aux autres et au mond
     )
     st.markdown("</div>", unsafe_allow_html=True)
 
+# =========================
+# LIGNE 2
+# =========================
 col3, col4 = st.columns(2)
 
 # --- Degré de conscience ---
@@ -115,9 +121,12 @@ centré sur le vécu au quotidien, les forces et les difficultés dans différen
     )
     st.markdown("</div>", unsafe_allow_html=True)
 
-# ---------- TROISIÈME LIGNE : Compétences sociales / ToM + Cohérence centrale ----------
+# =========================
+# LIGNE 3
+# =========================
 col5, col6 = st.columns(2)
 
+# --- Compétences sociales / ToM ---
 with col5:
     st.markdown('<div class="q-card">', unsafe_allow_html=True)
     st.markdown("### Questionnaire Compétences sociales / Théorie de l’esprit")
@@ -157,6 +166,31 @@ Outil particulièrement utile en contexte TSA, HPI et profils neurodivergents.
     st.link_button(
         "Passer le questionnaire Cohérence centrale",
         "https://coherencecentrale.streamlit.app/",
+    )
+    st.markdown("</div>", unsafe_allow_html=True)
+
+# =========================
+# LIGNE 4 – TDAH PARENTS
+# =========================
+col7, col8 = st.columns(2)
+
+with col7:
+    st.markdown('<div class="q-card">', unsafe_allow_html=True)
+    st.markdown("### Évaluation des signes d’appel du TDAH par les parents")
+    st.write(
+        """
+Questionnaire destiné aux **parents** visant à repérer les **signes d’appel du TDAH** 
+chez l’enfant ou l’adolescent.
+
+➡️ Si votre enfant est adulte aujourd’hui, répondez en vous référant à ce qui était
+le plus marquant lorsqu’il était enfant.
+
+Les résultats sont accessibles **uniquement au praticien** via un code anonyme.
+        """
+    )
+    st.link_button(
+        "Passer le questionnaire TDAH – Parents",
+        "https://tdah-pour-les-parents-kn5xadx6kd92s8llsx57lu.streamlit.app/",
     )
     st.markdown("</div>", unsafe_allow_html=True)
 
